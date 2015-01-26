@@ -86,7 +86,7 @@
         }, 
         {
             "bone": "bone_root", 
-            "filename": "/pa/units/sea/fabrication_ship_adv/wtrail.pfx", 
+            "filename": "/pa/units/sea/fabrication_ship_adv/wtrail_generated.pfx", 
             "offset": [
                 0, 
                 6.5, 

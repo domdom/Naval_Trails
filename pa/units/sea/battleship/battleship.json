@@ -50,7 +50,7 @@
     "fx_offsets": [
         {
             "bone": "bone_root", 
-            "filename": "/pa/units/sea/battleship/wtrail.pfx", 
+            "filename": "/pa/units/sea/battleship/wtrail_generated.pfx", 
             "offset": [
                 0, 
                 19.0, 

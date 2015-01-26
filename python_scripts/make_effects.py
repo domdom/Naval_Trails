@@ -11,12 +11,17 @@ unit_list_path = "C:\Games\Uber Entertainment\Planetary Annihilation Launcher\Pl
 
 unit_list = json.load(open(unit_list_path))
 
-effect_spec = json.load(open('wtrail.pfx'))
+water_trail = json.load(open('wtrail.pfx'))
+
+water_trail['emitters'].append(water_trail['emitters'][2].copy())
+water_trail['emitters'][3]['velocityX'] = -water_trail['emitters'][2]['velocityX']
+water_trail['emitters'][3]['offsetX'] = -water_trail['emitters'][2]['offsetX']
+
 
 fx_offset = {
     'type':'moving',
     'bone': 'bone_root',
-    'filename':'/pa/units/sea/wtrail.pfx',
+    'filename':'',
     'offset':[0, 0, 0]
 }
 
@@ -48,7 +53,7 @@ for unit in unit_list['units']:
            os.makedirs(os.path.dirname(mod_boat))
 
         # change our trail effect filename
-        fx_offset['filename'] = os.path.dirname(unit) + '/wtrail.pfx'
+        fx_offset['filename'] = os.path.dirname(unit) + '/wtrail_generated.pfx'
         windows_pfx_path = os.path.normpath(os.path.join(mod_path, fx_offset['filename'][1:]))
 
         
@@ -66,7 +71,10 @@ for unit in unit_list['units']:
 
         ## TODO: modify actualy water trail effect based on the dimensions and speed
         #        of the ship
+        water_trail['emitters'][2]['velocity'] = float(boat['navigation']['move_speed']) / 2
+        water_trail['emitters'][3]['velocity'] = float(boat['navigation']['move_speed']) / 2
+        
 
         
-        json.dump(effect_spec, open(windows_pfx_path, 'w'), indent=4, sort_keys=True)
+        json.dump(water_trail, open(windows_pfx_path, 'w'), indent=4, sort_keys=True)
         json.dump(boat, open(mod_boat, 'w'), indent=4, sort_keys=True)  

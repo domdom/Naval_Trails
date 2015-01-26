@@ -30,7 +30,7 @@
     "fx_offsets": [
         {
             "bone": "bone_root", 
-            "filename": "/pa/units/sea/sea_scout/wtrail.pfx", 
+            "filename": "/pa/units/sea/sea_scout/wtrail_generated.pfx", 
             "offset": [
                 0, 
                 4.5, 

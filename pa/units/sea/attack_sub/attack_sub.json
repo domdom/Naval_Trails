@@ -28,7 +28,7 @@
     "fx_offsets": [
         {
             "bone": "bone_root", 
-            "filename": "/pa/units/sea/attack_sub/wtrail.pfx", 
+            "filename": "/pa/units/sea/attack_sub/wtrail_generated.pfx", 
             "offset": [
                 0, 
                 6.5, 

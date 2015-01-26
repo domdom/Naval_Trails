@@ -37,7 +37,7 @@
     "fx_offsets": [
         {
             "bone": "bone_root", 
-            "filename": "/pa/units/sea/missile_ship/wtrail.pfx", 
+            "filename": "/pa/units/sea/missile_ship/wtrail_generated.pfx", 
             "offset": [
                 0, 
                 15.0, 

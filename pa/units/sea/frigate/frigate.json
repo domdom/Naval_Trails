@@ -36,7 +36,7 @@
     "fx_offsets": [
         {
             "bone": "bone_root", 
-            "filename": "/pa/units/sea/frigate/wtrail.pfx", 
+            "filename": "/pa/units/sea/frigate/wtrail_generated.pfx", 
             "offset": [
                 0, 
                 6.5, 

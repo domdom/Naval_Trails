@@ -41,7 +41,7 @@
     "fx_offsets": [
         {
             "bone": "bone_root", 
-            "filename": "/pa/units/sea/destroyer/wtrail.pfx", 
+            "filename": "/pa/units/sea/destroyer/wtrail_generated.pfx", 
             "offset": [
                 0, 
                 11.0, 
