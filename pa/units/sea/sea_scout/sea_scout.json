@@ -33,7 +33,7 @@
             "filename": "/pa/units/sea/sea_scout/wtrail_generated.pfx", 
             "offset": [
                 0, 
-                4.5, 
+                5.5, 
                 0
             ], 
             "type": "moving"
@@ -50,9 +50,9 @@
         "filename": "/pa/units/sea/sea_scout/sea_scout.papa"
     }, 
     "navigation": {
-        "acceleration": 50, 
-        "brake": 150, 
-        "move_speed": 15, 
+        "acceleration": 75, 
+        "brake": 200, 
+        "move_speed": 20, 
         "turn_in_place": false, 
         "turn_speed": 180, 
         "type": "deepwater"
@@ -67,6 +67,12 @@
                 {
                     "channel": "sight", 
                     "layer": "surface_and_air", 
+                    "radius": 150, 
+                    "shape": "capsule"
+                }, 
+                {
+                    "channel": "sight", 
+                    "layer": "underwater", 
                     "radius": 150, 
                     "shape": "capsule"
                 }

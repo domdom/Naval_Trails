@@ -40,14 +40,14 @@
             "filename": "/pa/units/sea/missile_ship/wtrail_generated.pfx", 
             "offset": [
                 0, 
-                15.0, 
+                16.0, 
                 0
             ], 
             "type": "moving"
         }
     ], 
     "guard_layer": "WL_AnySurface", 
-    "max_health": 1000, 
+    "max_health": 3000, 
     "mesh_bounds": [
         7, 
         32, 
@@ -83,6 +83,12 @@
                     "layer": "surface_and_air", 
                     "radius": 200, 
                     "shape": "capsule"
+                }, 
+                {
+                    "channel": "sight", 
+                    "layer": "underwater", 
+                    "radius": 200, 
+                    "shape": "capsule"
                 }
             ]
         }
@@ -108,6 +114,16 @@
             ], 
             "record_index": 1, 
             "spec_id": "/pa/units/sea/missile_ship/missile_ship_aa_tool_weapon.json"
+        }, 
+        {
+            "aim_bone": "socket_missile_muzzle01", 
+            "fire_event": "fired0", 
+            "muzzle_bone": [
+                "socket_missile_muzzle01", 
+                "socket_missile_muzzle02"
+            ], 
+            "record_index": 0, 
+            "spec_id": "/pa/units/sea/missile_ship/missile_ship_tool_antidrop.json"
         }
     ], 
     "unit_types": [

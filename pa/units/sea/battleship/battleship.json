@@ -53,7 +53,7 @@
             "filename": "/pa/units/sea/battleship/wtrail_generated.pfx", 
             "offset": [
                 0, 
-                19.0, 
+                20.0, 
                 0
             ], 
             "type": "moving"
@@ -91,6 +91,12 @@
                 {
                     "channel": "sight", 
                     "layer": "surface_and_air", 
+                    "radius": 200, 
+                    "shape": "capsule"
+                }, 
+                {
+                    "channel": "sight", 
+                    "layer": "underwater", 
                     "radius": 200, 
                     "shape": "capsule"
                 }

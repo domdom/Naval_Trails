@@ -89,7 +89,7 @@
             "filename": "/pa/units/sea/fabrication_ship_adv/wtrail_generated.pfx", 
             "offset": [
                 0, 
-                6.5, 
+                7.5, 
                 0
             ], 
             "type": "moving"
@@ -126,6 +126,12 @@
                 {
                     "channel": "sight", 
                     "layer": "surface_and_air", 
+                    "radius": 100, 
+                    "shape": "capsule"
+                }, 
+                {
+                    "channel": "sight", 
+                    "layer": "underwater", 
                     "radius": 100, 
                     "shape": "capsule"
                 }

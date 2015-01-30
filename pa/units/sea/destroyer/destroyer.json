@@ -44,7 +44,7 @@
             "filename": "/pa/units/sea/destroyer/wtrail_generated.pfx", 
             "offset": [
                 0, 
-                11.0, 
+                12.0, 
                 0
             ], 
             "type": "moving"
@@ -84,6 +84,12 @@
                     "layer": "surface_and_air", 
                     "radius": 180, 
                     "shape": "capsule"
+                }, 
+                {
+                    "channel": "sight", 
+                    "layer": "underwater", 
+                    "radius": 180, 
+                    "shape": "capsule"
                 }
             ]
         }
@@ -117,14 +123,6 @@
             "muzzle_bone": "socket_leftMuzzle02", 
             "record_index": 1, 
             "spec_id": "/pa/units/sea/destroyer/destroyer_tool_weapon.json"
-        }, 
-        {
-            "aim_bone": "socket_torpedoMuzzle", 
-            "fire_event": "fired2", 
-            "muzzle_bone": "socket_torpedoMuzzle", 
-            "record_index": 2, 
-            "show_range": false, 
-            "spec_id": "/pa/units/sea/destroyer/destroyer_tool_torpedo.json"
         }
     ], 
     "unit_types": [
