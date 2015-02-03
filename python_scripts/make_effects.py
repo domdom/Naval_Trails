@@ -66,6 +66,8 @@ for unit in unit_list['units']:
         fx_offset['filename'] = os.path.dirname(unit) + '/wtrail_generated.pfx'
         windows_pfx_path = os.path.normpath(os.path.join(mod_path, fx_offset['filename'][1:]))
 
+        # trying to get the died path effect to be removed
+        events ['died'] = 
         
         # change the trail offset (the Y offset is half the length of the ship minus 1
         fx_offset['offset'] = [0, float(bounds[1]) / 2, 0]
