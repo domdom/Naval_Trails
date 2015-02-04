@@ -65,7 +65,7 @@ for unit in unit_list['units']:
         windows_pfx_path = os.path.normpath(os.path.join(mod_path, fx_offset['filename'][1:]))
 
         # trying to get the died path effect to be removed
-        events ['died'] = 
+        boat['events'].pop('died', None)
         
         # change the trail offset (the Y offset is half the length of the ship minus 1
         fx_offset['offset'] = [0, float(bounds[1]) / 2, 0]
