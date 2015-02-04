@@ -46,6 +46,11 @@
     "events": {
         "build_complete": {
             "audio_cue": "/SE/Build_Complete/sea_fab"
+        }, 
+        "died": {
+            "audio_cue": "/SE/Death/Sea_small", 
+            "effect_scale": 1.5, 
+            "effect_spec": "/pa/effects/specs/default_explosion.pfx"
         }
     }, 
     "fx_offsets": [

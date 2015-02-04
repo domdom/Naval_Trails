@@ -21,6 +21,9 @@
         "build_complete": {
             "audio_cue": "/SE/Build_Complete/sea"
         }, 
+        "died": {
+            "audio_cue": "/SE/Death/Sea"
+        }, 
         "fired0": {
             "audio_cue": "/SE/Weapons/sea/T2_missile_ship_fire", 
             "effect_scale": 0.5, 

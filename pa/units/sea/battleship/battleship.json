@@ -21,6 +21,11 @@
         "build_complete": {
             "audio_cue": "/SE/Build_Complete/sea"
         }, 
+        "died": {
+            "audio_cue": "/SE/Death/Sea_large", 
+            "effect_scale": 2.0, 
+            "effect_spec": "/pa/effects/specs/default_building_explosion.pfx"
+        }, 
         "fired0": {
             "audio_cue": "/SE/Weapons/sea/T2_battleship_fire", 
             "effect_scale": 5.0, 
@@ -49,6 +54,16 @@
             "offset": [
                 0, 
                 20.0, 
+                0
+            ], 
+            "type": "moving"
+        },
+        {
+            "bone": "bone_root", 
+            "filename": "/pa/units/sea/battleship/front_strings.pfx", 
+            "offset": [
+                0, 
+                -20.0, 
                 0
             ], 
             "type": "moving"

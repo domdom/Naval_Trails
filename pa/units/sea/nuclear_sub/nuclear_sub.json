@@ -18,6 +18,11 @@
         "build_complete": {
             "audio_cue": "/SE/Build_Complete/sea"
         }, 
+        "died": {
+            "audio_cue": "/SE/Death/Sea_sub", 
+            "effect_scale": 1.5, 
+            "effect_spec": "/pa/effects/specs/default_building_explosion.pfx"
+        }, 
         "fired0": {
             "audio_cue": "/SE/Weapons/sea/torpedo_fire", 
             "effect_scale": 5.0, 
@@ -34,9 +39,19 @@
             "offset": [
                 0, 
                 17.5, 
-                0
+                -2.0
             ], 
             "type": "moving"
+        },
+        {
+            "bone": "bone_root", 
+            "filename": "/pa/units/sea/nuclear_sub/bubbles.pfx", 
+            "offset": [
+                0, 
+                0, 
+                0
+            ], 
+            "type": "idle"
         }
     ], 
     "max_health": 2100, 
