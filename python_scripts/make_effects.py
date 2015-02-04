@@ -7,8 +7,6 @@ import math
 
 import random
 
-#root_part = os.path.abspath(os.sep)
-
 pa_path = utils.pa_dir()
 
 mod_path = os.path.normpath(os.path.join(os.path.dirname(__file__), '..'))
@@ -87,13 +85,26 @@ for unit in unit_list['units']:
         water_trail['emitters'][2]['velocity'] = float(boat['navigation']['move_speed']) / 2
         water_trail['emitters'][3]['velocity'] = float(boat['navigation']['move_speed']) / 2
 
+        # add kick up for fast boats
+        if "WL_Underwater" not in boat['spawn_layers']:
+            emitter = copy.deepcopy(water_trail['emitters'][1])
+            
+            emitter["velocityY"] = 0.5
+            emitter["velocityZ"] = 1
 
-        # alter trail if it is for a sub
-        
-        # "spawn_layers": "WL_Underwater",
+            emitter["velocity"] = boat['navigation']['move_speed']
+            emitter["gravity"] = -20
 
-        if "WL_Underwater" in boat['spawn_layers']:
-                    
+            v = emitter['velocityZ'] / math.sqrt(emitter['velocityZ'] ** 2 + emitter['velocityY'] ** 2) * emitter["velocity"]
+            g = emitter["gravity"]
+            
+            emitter["lifetime"] = (2 * v) / math.fabs(g)
+            emitter["lifetimeRange"] = 0.1
+            water_trail['emitters'].append(emitter)
+                
+        else:
+            # "spawn_layers": "WL_Underwater",
+            # make special effects for the subs!
             # remove the wakes
             water_trail['emitters'] = water_trail['emitters'][:-2]
             # remove the random offset
