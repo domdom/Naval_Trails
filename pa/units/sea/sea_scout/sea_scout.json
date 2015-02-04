@@ -18,11 +18,6 @@
         "build_complete": {
             "audio_cue": "/SE/Build_Complete/sea"
         }, 
-        "died": {
-            "audio_cue": "/SE/Death/Sea", 
-            "effect_scale": 1.25, 
-            "effect_spec": "/pa/effects/specs/default_explosion.pfx"
-        }, 
         "fired": {
             "audio_cue": "/SE/Weapons/sea/sea_scout_fire"
         }

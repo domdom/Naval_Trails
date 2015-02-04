@@ -18,10 +18,6 @@
         "build_complete": {
             "audio_cue": "/SE/Build_Complete/sea"
         }, 
-        "died": {
-            "audio_cue": "/SE/Death/Sea_large", 
-            "effect_scale": 1.0
-        }, 
         "fired0": {
             "audio_cue": "/SE/Weapons/sea/destroyer_fire", 
             "effect_scale": 5.0, 

@@ -139,7 +139,7 @@ for unit in unit_list['units']:
                 water_trail['emitters'][i]['velocity'] = float(boat['navigation']['move_speed']) / 2
                 
                 water_trail['emitters'][i]['velocityY'] = 1
-                water_trail['emitters'][i]['velocityZ'] = 0.5
+                water_trail['emitters'][i]['velocityZ'] = 0.25
 
                 water_trail['emitters'][i]['drag'] = 0.9887
                 
