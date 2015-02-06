@@ -21,7 +21,6 @@
         "died": {
             "audio_cue": "/SE/Death/Sea_sub", 
             "effect_scale": 1.5, 
-            "effect_spec": "/pa/effects/specs/default_building_explosion.pfx"
         }, 
         "fired0": {
             "audio_cue": "/SE/Weapons/sea/torpedo_fire", 

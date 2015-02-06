@@ -20,8 +20,7 @@
         }, 
         "died": {
             "audio_cue": "/SE/Death/Sea_sub", 
-            "effect_scale": 2.0, 
-            "effect_spec": "/pa/effects/specs/default_explosion.pfx"
+            "effect_scale": 2.0
         }, 
         "fired": {
             "audio_cue": "/SE/Weapons/sea/attack_sub_fire"

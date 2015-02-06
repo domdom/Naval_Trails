@@ -50,7 +50,6 @@
         "died": {
             "audio_cue": "/SE/Death/Sea", 
             "effect_scale": 1.5, 
-            "effect_spec": "/pa/effects/specs/default_explosion.pfx"
         }
     }, 
     "fx_offsets": [
