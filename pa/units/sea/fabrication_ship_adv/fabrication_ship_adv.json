@@ -49,7 +49,7 @@
         }, 
         "died": {
             "audio_cue": "/SE/Death/Sea", 
-            "effect_scale": 1.5, 
+            "effect_scale": 1.5
         }
     }, 
     "fx_offsets": [
