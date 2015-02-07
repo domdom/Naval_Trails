@@ -1,20 +1,21 @@
 {
-  "context": "server",
+  "context": "client",
   "identifier": "nl.pa.Alpha.naval_trails",
   "display_name": "Naval Trails",
   "description": "Adds naval trails",
   "author": "Dom314, Killerkiwijuice, Alpha2546",
-  "version": "0.0.1",
+  "version": "1.0",
   "build": "77443",
-  "date": "2015/02/03",
+  "date": "2015/02/06",
   "signature": "not yet implemented",
-  "forum": "https://forums.uberent.com/threads/rel-cplosion-mod.65157/",
-  "icon": "http://s1.postimg.org/alefdd1yz/CPlosion.jpg?noCache=1414088361",
+  "forum": "https://forums.uberent.com/threads/rel-naval-trails.67807/",
+  "icon": "http://i.imgur.com/rpn9M7B.png",
   "category": [
 	  "in-game",
 	  "shader",
 	  "naval",
-	  "trails"
+	  "trails",
+	  "effects"
     ],
   "priority": 100
 }
